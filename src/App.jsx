@@ -30,7 +30,7 @@ const CONTACT = {
 
 // ⚙️ رابط Apps Script — ثابت في الكود، يعمل لكل من يفتح الموقع
 // لتغييره: عدّل القيمة هنا، أو من "⚙️ الإعدادات" داخل لوحة النتائج (يطبّق على متصفحك فقط)
-const DEFAULT_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwJe69OgHcooN4nL0zERA40WBXRQwRBJaJ5aj0yNAClSiNVqywgQvCEqxv_hbyA7Gnl/exec";
+const DEFAULT_WEBHOOK_URL = "";
 
 const WILAYAS = [
   "أدرار","الشلف","الأغواط","أم البواقي","باتنة","بجاية","بسكرة","بشار",
@@ -392,7 +392,7 @@ export default function App() {
       if (webhookUrl) {
         const res = await fetch(webhookUrl, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(payload),
         });
         const result = await res.json();
