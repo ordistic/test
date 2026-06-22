@@ -30,7 +30,7 @@ const CONTACT = {
 
 // ⚙️ رابط Apps Script — ثابت في الكود، يعمل لكل من يفتح الموقع
 // لتغييره: عدّل القيمة هنا، أو من "⚙️ الإعدادات" داخل لوحة النتائج (يطبّق على متصفحك فقط)
-const DEFAULT_WEBHOOK_URL = "";
+const DEFAULT_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzgpRmPjFzFx8v96mdbO7oB8qOnNWd9w8bgKS5kwmQDC3dUX0ocBqiwl-oEM_l7PjlB/exec";
 
 const WILAYAS = [
   "أدرار","الشلف","الأغواط","أم البواقي","باتنة","بجاية","بسكرة","بشار",
